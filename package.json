@@ -1,0 +1,28 @@
+{
+  "name": "nodejs-verkkopalvelu-elias",
+  "version": "1.0.0",
+  "description": "This is a NodeJS practice project by Elias Lunden.",
+  "keywords": [
+    "Node.JS",
+    "Express",
+    "Handlebars"
+  ],
+  "homepage": "https://github.com/EliasLunden-TIVI/NodeJS-Verkkopalvelu-Elias#readme",
+  "bugs": {
+    "url": "https://github.com/EliasLunden-TIVI/NodeJS-Verkkopalvelu-Elias/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EliasLunden-TIVI/NodeJS-Verkkopalvelu-Elias.git"
+  },
+  "license": "ISC",
+  "author": "Elias \"Nexu_ss\" Lunden",
+  "type": "commonjs",
+  "main": "app.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
