@@ -35,13 +35,14 @@ app.get('/', (req, res) => { // '/' is Root of page
     let today = 'Wednesday';
     let food = 'Pizza';
 
-    let dataToSend = {
+    let dataToSend = { // These variables are sent to the template / page.
         'dayName': today,
-        'food': food
+        'food': food,
+        'body': "Welcome to the homepage of our Node.js web server! This page is made by Elias"
     };
 
     // Render homepage
-    res.render('index', dataToSend);
+    res.render('index', dataToSend); // The template / page is rendered with the variables sent to it.
 });
 
 // URL ROUTE FOR ABOUT PAGE
@@ -49,7 +50,7 @@ app.get('/', (req, res) => { // '/' is Root of page
 app.get('/about', (req, res) => {
     // Testing data
     let aboutData = {
-        'team': 'TIVIpt24B'
+        'body': 'TIVIpt24B'
     };
 
     // Render about page

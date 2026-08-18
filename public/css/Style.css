@@ -1,0 +1,22 @@
+p, h1, h2, h3, h4 {
+
+    font-family : 'Roboto', sans-serif;
+    
+    color : white;
+
+
+}
+
+a {
+    
+    color : red;
+
+    font-weight : bold;
+}
+
+header, footer, body {
+
+    background-color : rgb(0, 0, 0);
+
+    color : white;
+}
