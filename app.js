@@ -31,13 +31,19 @@ app.set('view engine', 'handlebars'); // Sets Handlebars as the default template
 
 app.get('/', (req, res) => { // '/' is Root of page
 
-    // Testing data for a template
-    let today = 'Wednesday';
-    let food = 'Pizza';
+    // This will be sent to the template 
+    let today = 'Torstai'; 
+    let food = 'Kinkku-Pizza'; 
+    let foodveg = 'Kasvis-Pizza';
+    let sides = 'Ranskalaiset Perunat';
+    let sides2 = `Paprika-Majoneesi`;
 
     let dataToSend = { // These variables are sent to the template / page.
         'dayName': today,
         'food': food,
+        'foodveg': foodveg,
+        'sides': sides,
+        'sides-2': sides2,
         'body': "Welcome to the homepage of our Node.js web server! This page is made by Elias"
     };
 

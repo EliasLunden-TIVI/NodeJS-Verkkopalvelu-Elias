@@ -1,15 +1,36 @@
-<h1>Tämä on Kotisivu (Index)</h1>
-<p>Tämä on kotisivun staattista sisältöä.</p>
-<p>Sivulla toimii myös CSS teemat!</p>
+<body>
+    <header>
+        <h1>Tämä on Kotisivu (Index)</h1>
+    
+        <p>Tämä on testisivu dynaamisen datan esittämiseen verkkosivulla.</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index">Koti</a></li>
+            <li><a href="about">Tietoja</a></li>
+        </ul>
+    </nav>
 
-<a href="about">Takaisin about sivulle</a>
+    <h2>Päivän ruokalista:</h2>
 
-<h2>Dynaaminen sisältö</h2>
-<p>Tästä eteenpäin sivun sisältö on dynaamista. Palvelin luo tiedot ja lähettää ne tälle sivulle. Dynaamista dataa varten sivuille sijoitetaan paikkamerkkejä kaksinkertaisissa aaltosulkeissa. Paikkamerkit ovat JSON-objektien avaimia.
-</p>
+    <div id="ruokalista">
 
-We have {{food}} on {{dayName}}. <!-- Data from the food and dayname variables is inserted here -->
+        <h3>{{dayName}}</h3>
 
-<p>Alla on myös toinen testattava muuttuja:</p>
+        <p>Tänään Rosmariinissa on tarjolla:</p>
 
-{{{body}}} <!-- Data from the body variable is inserted here -->
+        <ul>
+            <h3>Pääruoka:</h3>
+            <li>{{food}}</li>
+            <h3>Kasvisruoka:</h3>
+            <li>{{foodveg}}</li>
+            <h3>Lisukkeet:</h3>
+            <li>{{sides}}</li>
+            <li>{{sides-2}}</li>
+        </ul>
+
+    </div>
+
+
+    <!-- {{{body}}} Data from the body variable is inserted here -->
+</body>
