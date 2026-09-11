@@ -1,17 +1,15 @@
+<header>
+    <h1>Tämä on Kotisivu (Index)</h1>
+    <p>Tämä on testisivu dynaamisen datan esittämiseen verkkosivulla.</p>
+</header>
+<nav>
+    <ul>
+        <li><a href="index">Koti</a></li>
+        <li><a href="about">Tietoja</a></li>
+    </ul>
+</nav>
 <body>
-    <header>
-        <h1>Tämä on Kotisivu (Index)</h1>
-    
-        <p>Tämä on testisivu dynaamisen datan esittämiseen verkkosivulla.</p>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="index">Koti</a></li>
-            <li><a href="about">Tietoja</a></li>
-        </ul>
-    </nav>
-
-    <h2>Päivän ruokalista:</h2>
+    <h2 id="headertweak">Päivän ruokalista:</h2>
 
     <div id="ruokalista">
 
@@ -28,9 +26,15 @@
             <li>{{sides}}</li>
             <li>{{sides-2}}</li>
         </ul>
-
     </div>
-
-
-    <!-- {{{body}}} Data from the body variable is inserted here -->
 </body>
+<footer>
+    <p id="accentfont">Osaamiselle ruokaa!</p>
+    <h2>Yhteystiedot:</h2>
+    <section>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente possimus architecto maiores repellat aspernatur? Distinctio aspernatur vitae, perferendis numquam aperiam illo necessitatibus, autem obcaecati eaque odio quas consequuntur hic. Numquam!</p>
+    </section>
+    <article>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </article>
+</footer>

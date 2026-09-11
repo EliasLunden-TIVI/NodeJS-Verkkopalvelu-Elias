@@ -2,25 +2,45 @@
 /*Root configuration for pages*/
 * {
     box-sizing: border-box;
-    font-family: 'Nunito Sans', Arial, sans-serif;
+    /*font-family: 'Nunito Sans', Arial, sans-serif;*/
 
     color : rgb(239, 239, 239);
 }
 
-/*Most text and headers*/
-
-p, h1, h2, h3, h4 {
+/*Plaintext*/
+p {
     
-    color : white;
+    font-family: 'Nunito Sans', Arial, sans-serif;
+    font-weight: normal;
+
+    font-size : 14px;
 
 }
 
+/*Links*/
 a {
     
     color : rgb(239, 239, 239);
 
     font-weight : bold;
 }
+
+/*Headings*/
+h1 {
+    
+    font-family: 'Kanit', Arial, sans-serif;
+    font-weight: 900; /*900 Is "Black"*/
+
+}
+
+h2, h3, h4 {
+    
+    font-family: 'Kanit', Arial, sans-serif;
+    font-weight: ExtraBold;
+
+}
+
+/*Sections*/
 
 body {
 
@@ -74,6 +94,7 @@ nav ul {
     list-style : none;
 }
 
+/*Elements*/
 
 #ruokalista {
 
@@ -83,7 +104,25 @@ nav ul {
 
     padding : 5px;
     border-radius : 5px;
+    
+    margin : 10px;
 
 
+
+}
+
+#accentfont {
+
+    color : rgb(239, 239, 239);
+
+    font-family: 'Caveat Brush', cursive, Arial, sans-serif;
+    font-size : 40px;
+    font-weight: ExtraBold;
+
+}
+
+#headertweak { 
+
+    padding : 10px;
 
 }
